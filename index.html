@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Coin Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Anik Kotni ustiga bosing va pul ishlang</h1>
+        <div class="coin-container">
+            <img src="coin-image.png" alt="Coin" class="coin" id="coin">
+        </div>
+        <div id="message"></div>
+        <div id="cash-out-section">
+            <button id="cash-out-button">Pulni chiqarib olish</button>
+            <div id="cash-out-form" class="hidden">
+                <input type="text" id="card-number" placeholder="Visa kartangizni kiriting">
+                <button id="submit-button">Yuborish</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.coin-container {
+    position: relative;
+}
+
+.coin {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: red;
+    animation: fadeout 1s forwards;
+}
+
+.hidden {
+    display: none;
+}
+
+#cash-out-section {
+    margin-top: 20px;
+}
+
+#cash-out-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cash-out-form input, #cash-out-form button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+@keyframes fadeout {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
